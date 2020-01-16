@@ -93,7 +93,7 @@ export class Catalog extends React.Component<NavigationProps> {
           <ScrollView
             showsHorizontalScrollIndicator={false}
             horizontal={true}
-            style={{backgroundColor: background}}
+            style={{backgroundColor: background, marginBottom: 18, marginTop: 8}}
           >
             {categoriesButtons.map(res => (
               <View key={res}>
@@ -112,13 +112,13 @@ export class Catalog extends React.Component<NavigationProps> {
               </View>
             ))}
           </ScrollView>
-          <View style={{flexDirection: 'row', justifyContent: "space-between"}}>
+          <View style={{flexDirection: 'row', justifyContent: "space-between", marginBottom: 10}}>
             <View style={{flexDirection: 'row'}}>
               <Filter />
               <Px11>Filters</Px11>
             </View>
             <View style={{flexDirection: 'row'}}>
-              <List />
+              <Order />
               <Px11>Price: lowest to high</Px11>
             </View>
             <View>
